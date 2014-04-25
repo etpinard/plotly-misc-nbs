@@ -9,8 +9,6 @@
     }
     h1 {
         font-family: 'Open sans',verdana,arial,sans-serif;
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
     .text_cell_render h1 {
         font-weight: 200;
@@ -20,11 +18,10 @@
         margin-bottom: 0em;
         margin-top: 0em;
         display: block;
+        white-space: nowrap;
     } 
     h2 {
         font-family: 'Open sans',verdana,arial,sans-serif;
-        margin-top: 10px;
-        margin-bottom: 40px;
         text-indent:1em;
     }
     .text_cell_render h2 {
@@ -36,35 +33,35 @@
         margin-bottom: 1.5em;
         margin-top: 0.5em;
         display: block;
+        white-space: nowrap;
     } 
     h3 {
         font-family: 'Open sans',verdana,arial,sans-serif;
-        text-indent:0.5em;
+     /*   text-indent:0.5em; */
     }
     .text_cell_render h3 {
         font-weight: 300;
         font-size: 18pt;
+        /* font-style: italic; */
+        line-height: 100%;
         /* color: #1d3b84; */
         color:#447adb;
-        /* font-style: italic; */
         margin-bottom: 0.5em;
         margin-top: 2em;
         display: block;
+        white-space: nowrap;
     }
     h4 {
         font-family: 'Open sans',verdana,arial,sans-serif;
-        margin-top:15px;
-        margin-bottom: 3px;
     }
     .text_cell_render h4 {
         font-weight: 300;
         font-size: 16pt;
-        /* color: #1d3b84; */
         color:#447adb;
-        /* font-style: italic; */
         margin-bottom: 0.5em;
         margin-top: 0.5em;
         display: block;
+        white-space: nowrap;
     }
     div.text_cell_render{
         font-family: 'Open sans',verdana,arial,sans-serif;
