@@ -153,7 +153,7 @@ figure.subplots_adjust(left=.02, right=.98)
 
 #### 2. Plotly version
 
-# In[6]:
+# In[5]:
 
 #
 cm_bright = ['#FF0000', '#0000FF']
@@ -172,7 +172,7 @@ def make_Scatter(sbplt_in,x_in,y_in,color_in,opacity_in):
         yaxis= 'y{}'.format(sbplt_in))
 
 
-# In[7]:
+# In[6]:
 
 #
 cm_name = 'RdBu'
@@ -192,7 +192,7 @@ def make_Contour(sbplt_in,x_in,y_in,Z_in):
         yaxis= 'y{}'.format(sbplt_in))
 
 
-# In[8]:
+# In[7]:
 
 # Some style options for all x- and y-axes
 axis_style = dict(
@@ -216,7 +216,7 @@ def make_YAxis(y_in):
     return yaxis
 
 
-# In[9]:
+# In[8]:
 
 #
 def make_score_anno(sbplt_in,x_in,y_in,score):
@@ -246,7 +246,7 @@ def make_sbplt_anno(sbplt_in,x_in,y_in,name):
 
 # Generate figure object with subplot layout:
 
-# In[10]:
+# In[9]:
 
 #
 figure = tls.get_subplots(
@@ -259,7 +259,7 @@ figure = tls.get_subplots(
 
 # Add a few style options:
 
-# In[11]:
+# In[10]:
 
 #
 figure['layout'].update(showlegend=False,
@@ -277,7 +277,7 @@ figure['layout']['annotations'] = Annotations([])
 
 # Loop through the datasets and the classifiers to fill in the figure object:
 
-# In[12]:
+# In[11]:
 
 i = 1   #
 
@@ -346,23 +346,28 @@ for ds in datasets[::-1]:
         
 
 
-# In[13]:
+# In[12]:
 
 print figure['layout'].to_string()
 
 
-# In[16]:
+# In[18]:
 
 import json
 
 class NumpyAwareJSONEncoder(json.JSONEncoder):
      def default(self, obj):
          if isinstance(obj, np.ndarray):
-                 return x.tolist()
+                 return obj.tolist()
          return json.JSONEncoder.default(self, obj)
 
 with open('figure.json', 'w') as outfile:
     json.dump(figure, outfile, cls=NumpyAwareJSONEncoder)
+
+
+# In[20]:
+
+#cat figure.json
 
 
 # In[14]:
