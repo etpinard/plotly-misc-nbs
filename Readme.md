@@ -3,6 +3,11 @@ Plotly-misc-nbs
 
 Miscellaneous IPython notebook showing off plotly's features
 
+#### View this repo on nbviewer
+
+- by clicking [here](http://nbviewer.ipython.org/github/etpinard/plotly-misc-nbs/tree/master/).
+
+
 #### Useful links:
 
 - [plot.ly](https://plot.ly/)
