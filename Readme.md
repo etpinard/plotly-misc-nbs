@@ -1,7 +1,7 @@
 Plotly-misc-nbs
 ===============
 
-Miscellaneous IPython notebook showing off plotly's features
+Miscellaneous IPython notebooks showing off plotly's features
 
 #### View this repo on nbviewer
 
@@ -11,9 +11,9 @@ Miscellaneous IPython notebook showing off plotly's features
 #### Useful links:
 
 - [plot.ly](https://plot.ly/)
-- Plotly's [learn](https://plot.ly/learn/) page
-- Plotly's python API libray [documentation](https://plot.ly/python/) page
+- Plotly's Python API libray [documentation](https://plot.ly/python/) page
 - A [User Guide](https://plot.ly/python/user-guide/) for Plotly's python API library
+- Some other plotly [IPython notebooks](https://plot.ly/ipython-notebooks/)
 - [Graph reference](https://plot.ly/python/reference/) for Plotly's python API library
 
 
