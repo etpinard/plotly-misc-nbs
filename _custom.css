@@ -80,7 +80,7 @@
         text-align:justify;
         text-justify:inter-word;
     }
-    div.output_subarea.output_text.output_pyout {
+    div.output_subarea.output_text {
         overflow-x: auto;
         overflow-y: scroll;
         max-height: 300px;
